@@ -1,5 +1,4 @@
 ---
-import "../styles/global.css";
 const { title = "Coherent Systems Research Institute" } = Astro.props;
 ---
 
@@ -7,6 +6,10 @@ const { title = "Coherent Systems Research Institute" } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <title>{title}</title>
+
+    <style is:global>
+      @import "../styles/global.css";
+    </style>
   </head>
 
   <body class="text-gray-100 min-h-screen flex flex-col">
