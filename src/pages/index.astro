@@ -2,32 +2,58 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout>
-  <section class="max-w-5xl mx-auto py-32 px-6">
-    <h1 class="text-6xl font-extrabold text-white">
-      Coherent Consciousness Framework
-    </h1>
+<BaseLayout title="Coherent Consciousness Framework">
+  <section class="relative py-40 px-6">
 
-    <p class="mt-4 text-2xl text-gray-400 max-w-3xl">
-      A unified scientific model describing coherence, structure, and functional dynamics
-      within conscious systems.
-    </p>
+    <!-- HERO BACKGROUND -->
+    <div class="absolute inset-0 bg-gradient-to-b from-gray-900 to-gray-950 opacity-90"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.06)_0%,rgba(0,0,0,0)_70%)]"></div>
+    <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[length:40px_40px]"></div>
+    <div class="absolute inset-0 bg-[linear-gradient(0deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[length:40px_40px]"></div>
 
-    <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-      <a href="/introduction" class="p-6 bg-gray-800 hover:bg-gray-700 rounded-xl text-white">
-        <h2 class="text-xl font-semibold">Introduction</h2>
-        <p class="text-gray-400 mt-2">Core principles and definitions.</p>
-      </a>
+    <!-- HERO CONTENT -->
+    <div class="relative max-w-5xl mx-auto text-center">
+      <h1 class="text-7xl font-extrabold text-white tracking-tight leading-tight">
+        Coherent Consciousness Framework
+      </h1>
 
-      <a href="/research-objective" class="p-6 bg-gray-800 hover:bg-gray-700 rounded-xl text-white">
-        <h2 class="text-xl font-semibold">Research Objective</h2>
-        <p class="text-gray-400 mt-2">Formal goals and scientific direction.</p>
-      </a>
-
-      <a href="/institute-overview" class="p-6 bg-gray-800 hover:bg-gray-700 rounded-xl text-white">
-        <h2 class="text-xl font-semibold">Institute Overview</h2>
-        <p class="text-gray-400 mt-2">Structure, mission, and scope.</p>
-      </a>
+      <p class="mt-8 text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+        A unified scientific model describing coherence, structure, and functional dynamics
+        within conscious systems. Developed and maintained by the Coherent Systems Research Institute.
+      </p>
     </div>
+
+    <!-- GRID CARDS -->
+    <div class="relative mt-24 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <a href="/introduction" class="group p-10 bg-gray-900/60 backdrop-blur-sm border border-gray-800 rounded-xl transition hover:border-gray-600 hover:bg-gray-900/80">
+        <h2 class="text-2xl font-semibold text-white group-hover:text-blue-300">
+          Introduction
+        </h2>
+        <p class="text-gray-400 mt-4 text-lg">
+          Core principles, definitions, and foundational concepts.
+        </p>
+      </a>
+
+      <a href="/research-objective" class="group p-10 bg-gray-900/60 backdrop-blur-sm border border-gray-800 rounded-xl transition hover:border-gray-600 hover:bg-gray-900/80">
+        <h2 class="text-2xl font-semibold text-white group-hover:text-blue-300">
+          Research Objective
+        </h2>
+        <p class="text-gray-400 mt-4 text-lg">
+          Formal goals, scientific direction, and methodology.
+        </p>
+      </a>
+
+      <a href="/institute-overview" class="group p-10 bg-gray-900/60 backdrop-blur-sm border border-gray-800 rounded-xl transition hover:border-gray-600 hover:bg-gray-900/80">
+        <h2 class="text-2xl font-semibold text-white group-hover:text-blue-300">
+          Institute Overview
+        </h2>
+        <p class="text-gray-400 mt-4 text-lg">
+          Structure, mission, and operational scope.
+        </p>
+      </a>
+
+    </div>
+
   </section>
 </BaseLayout>
