@@ -3,9 +3,9 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@tailwindcss/vite';
 import mdx from '@astrojs/mdx';
 
-export default defineConfig({
-  vite: {
-    plugins: [tailwind()],
-  },
-  integrations: [mdx()],
-});
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./src/**/*.{astro,html,js,jsx,ts,tsx,md,mdx}",
+  ],
+};
