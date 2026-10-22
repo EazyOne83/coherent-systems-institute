@@ -1,18 +1,55 @@
 ---
-layout: ../layouts/BaseLayout.astro
-title: "Coherent Systems Research Institute"
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "Coherent Systems Research Institute";
 ---
 
-# Welcome
+<BaseLayout {title}>
+  <section class="min-h-screen flex flex-col justify-center items-center text-center">
 
-This is the landing page for the Coherent Systems Research Institute.
+    <!-- HERO -->
+    <div class="space-y-6">
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+        Coherent Systems Research Institute
+      </h1>
 
-<h2 class="text-2xl font-semibold mt-6">
-  Current Research
-</h2>
+      <p class="max-w-2xl mx-auto text-lg md:text-xl text-gray-700 leading-relaxed">
+        Advancing the scientific foundation of <span class="font-semibold">Coherent Consciousness Framework (CCF)</span> through rigorous research, open publication, and applied systems engineering.
+      </p>
 
-<ul class="list-disc ml-6 mt-4">
-  <li><a class="text-blue-600 underline" href="/introduction">Introduction</a></li>
-  <li><a class="text-blue-600 underline" href="/institute-overview">Institute Overview</a></li>
-  <li><a class="text-blue-600 underline" href="/research-objective">Research Objective</a></li>
-</ul>
+      <!-- CTA BUTTONS -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+        <a href="/introduction" class="px-8 py-4 rounded-xl bg-blue-600 text-white font-semibold shadow-lg hover:bg-blue-700 transition">
+          Learn the Framework
+        </a>
+
+        <a href="/research-objective" class="px-8 py-4 rounded-xl bg-gray-900 text-white font-semibold shadow-lg hover:bg-black transition">
+          Research Objectives
+        </a>
+      </div>
+    </div>
+
+    <!-- FEATURE GRID -->
+    <div class="grid md:grid-cols-3 gap-8 mt-20 max-w-5xl w-full px-6">
+      <div class="p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition bg-white">
+        <h3 class="text-xl font-bold mb-2">Scientific Foundation</h3>
+        <p class="text-gray-600">Formalizing the underlying structure of coherent consciousness using modern systems theory.</p>
+      </div>
+
+      <div class="p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition bg-white">
+        <h3 class="text-xl font-bold mb-2">Open Research</h3>
+        <p class="text-gray-600">Publishing findings across Zenodo, ResearchGate, and institutional repositories.</p>
+      </div>
+
+      <div class="p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition bg-white">
+        <h3 class="text-xl font-bold mb-2">Applied Systems</h3>
+        <p class="text-gray-600">Engineering real‑world implementations of CCF principles for measurable outcomes.</p>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="mt-24 text-gray-500 text-sm">
+      © 2026 Coherent Systems Research Institute — All Rights Reserved
+    </footer>
+  </section>
+</BaseLayout>
